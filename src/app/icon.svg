@@ -1,0 +1,26 @@
+<!-- public/logo.svg  (and app/icon.svg — same content) -->
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cap base (the rounded part that sits on the head) -->
+  <path
+    d="M17 27 v10.5 c0 6.6 6.7 11.5 15 11.5 s15 -4.9 15 -11.5 V27 Z"
+    fill="#334155"
+  />
+
+  <!-- Mortarboard (the flat square on top) -->
+  <path d="M32 10 L58 25 L32 40 L6 25 Z" fill="#0f172a" />
+
+  <!-- Subtle highlight on the top-left half of the board -->
+  <path d="M32 10 L58 25 L32 40 Z" fill="#1e293b" />
+
+  <!-- Tassel cord hanging from the right corner -->
+  <path
+    d="M54 25.5 Q55.5 34 54 43"
+    stroke="#fbbf24"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <!-- Tassel tuft -->
+  <rect x="50" y="42" width="8" height="11" rx="4" fill="#fbbf24" />
+</svg>

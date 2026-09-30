@@ -1,0 +1,31 @@
+app/
+  layout.tsx            # root layout
+  page.tsx              # home page (assembles everything)
+  globals.css           # Tailwind entry
+components/
+  ScheduleHeader.tsx    # title + quick stats
+  Legend.tsx            # color legend for class types
+  ScheduleGrid.tsx      # the timetable (header row + period rows)
+  ScheduleRow.tsx       # one period row
+  TimeLabel.tsx         # left cell with period number + time
+  DayHeader.tsx         # one day column header
+  ClassCard.tsx         # a single class card
+  EmptySlot.tsx         # placeholder for a free period
+lib/
+  config.ts             # days, timing rules, generated time slots
+  scheduleData.ts       # the actual weekly content
+  classTypeStyles.ts    # color palette per class type
+types/
+  schedule.ts           # shared TypeScript types
+
+
+### Schedule Mechanics & Customization
+
+The page is built around a fixed grid: Saturday through Thursday across the top, six 1.5-hour periods down the side. Times are generated automatically from `DAY_START_MINUTES`, `DAY_END_MINUTES`, and `CLASS_DURATION_MINUTES` in `lib/config.ts`, so changing the class length or day boundaries reshapes the whole timetable without editing each row.
+
+Every class cell is rendered by `ClassCard`, showing the type badge, student group, room or lab, and teacher name. The card’s color comes from `classTypeStyles.ts`, and the legend above the grid updates automatically when you add a new type. If a period has no class, `EmptySlot` displays a “Free” placeholder.
+
+All schedule content lives in `lib/scheduleData.ts`. Each day is an array of six class objects, so you can edit teachers, rooms, groups, or types directly there. The header shows quick stats like number of days, periods per day, and class duration, all calculated from the same config.
+---
+
+**Optimization Tip:** To change the daily start/end times or class duration, edit `DAY_START_MINUTES`, `DAY_END_MINUTES`, and `CLASS_DURATION_MINUTES` in `lib/config.ts`. Update the actual classes in `lib/scheduleData.ts` and adjust class type colors in `lib/classTypeStyles.ts`.

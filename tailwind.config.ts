@@ -1,21 +1,15 @@
+// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    // Required: class names live inside the style map in lib/
+    "./lib/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: [
-          "var(--font-arabic-sans)",
-          "var(--font-geist-sans)",
-          "system-ui",
-          "sans-serif",
-        ],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
