@@ -28,7 +28,7 @@ export const WEEKLY_SCHEDULE: Schedule = {
 
   /* ----------------------------- Sunday ---------------------------- */
   Sunday: [
-    { id: "sun-1", type: "Cours", module: "ProStat1 S01", group: "", place: "S01-A02", teacher: "Bouziane Abderaouf" },
+    { id: "sun-1", type: "Cours", module: "ProStat1", group: "", place: "S01-A01", teacher: "Bouziane Abderaouf" },
     null,
     null,
     null,
@@ -38,19 +38,19 @@ export const WEEKLY_SCHEDULE: Schedule = {
 
   /* ----------------------------- Monday ---------------------------- */
   Monday: [
-    { id: "mon-1", type: "Cours", module: "GestPro", group: "", place: "S01-A02", teacher: "Saha Adel" },
+    { id: "mon-1", type: "Cours", module: "SI", group: "", place: "S01-A01", teacher: "Chellakh Hafida" },
     null,
-    { id: "mon-3", type: "Cours", module: "ARCH", group: "", place: "S01-A02", teacher: "Lefkir Mira" },
-    null,
+    { id: "mon-3", type: "Cours", module: "ARCH", group: "", place: "S01-A10", teacher: "Lefkir Mira" },
+    { id: "mon-3", type: "TD", module: "SI", group: "G03", place: "S19", teacher: "" },
     null,
     null,
   ],
 
   /* ---------------------------- Tuesday ---------------------------- */
   Tuesday: [
-    { id: "tue-1", type: "Cours", module: "SI", group: "", place: "S01-A02", teacher: "Chellakh Hafida" },
+    { id: "tue-1", type: "Cours", module: "GestPro", group: "", place: "S01-A10", teacher: "Saha Adel" },
     null,
-    { id: "tue-3", type: "TD", module: "SI", group: "G03", place: "S17", teacher: "" },
+    null,
     null,
     null,
     null,
@@ -58,12 +58,12 @@ export const WEEKLY_SCHEDULE: Schedule = {
 
   /* --------------------------- Wednesday --------------------------- */
   Wednesday: [
-    null,
-    { id: "wed-2", type: "TP", module: "ARCH", group: "G03", place: "L03", teacher: "" },
+    { id: "wed-1", type: "TD", module: "ASD", group: "G03", place: "S06", teacher: "Nehar Aicha" },
+    { id: "wed-2", type: "TP", module: "ARCH", group: "G03", place: "L03", teacher: "Lefkir Mira" },
     { id: "wed-3", type: "Cours", module: "MeNum", group: "", place: "S01-A02", teacher: "Bachir cherif larbi" },
     null,
     null,
-    { id: "wed-6", type: "TD", module: "ASD3", group: "G01", place: "S06", teacher: "" },
+    null,
   ],
 
   /* ---------------------------- Thursday --------------------------- */
