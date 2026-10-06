@@ -51,7 +51,7 @@ export const WEEKLY_SCHEDULE: Schedule = {
     { id: "tue-1", type: "Cours", module: "GestPro", group: "", place: "S01-A10", teacher: "Saha Adel" },
     null,
     null,
-    null,
+    { id: "tue-2", type: "Cours", module: "ASD", group: "", place: "S01-A10", teacher: "BADAOUI ATIKA" },
     null,
     null,
   ],
